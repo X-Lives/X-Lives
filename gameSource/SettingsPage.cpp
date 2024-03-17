@@ -46,14 +46,14 @@ SettingsPage::SettingsPage()
           // Left Pane
           mRestartButton( mainFont, 360, -272, translate( "restartButton" ) ),
           
-          mGameplayButton( mainFont, -452.5, 288, translate( "gamePlayButton" )),
-          mControlButton( mainFont, -452.5, 192, translate( "controlButton" )),
-          mScreenButton( mainFont, -452.5, 96, translate( "screenButton" )),
-          mSoundButton( mainFont, -452.5, 0, translate( "soundButton" )),
+          mGameplayButton( mainFont, -452.5, 288, translate( "gamePlayButton" ) ),
+          mControlButton( mainFont, -452.5, 192, translate( "controlButton" ) ),
+          mScreenButton( mainFont, -452.5, 96, translate( "screenButton" ) ),
+          mSoundButton( mainFont, -452.5, 0, translate( "soundButton" ) ),
 #ifdef USE_DISCORD
-          mDiscordButton( mainFont, -452.5, -96, translate( "discordButton" )),
+          mDiscordButton( mainFont, -452.5, -96, translate( "discordButton" ) ),
 #endif // USE_DISCORD
-          mAdvancedButton( mainFont, -452.5, -192, translate( "advancedButton" )),
+          mAdvancedButton( mainFont, -452.5, -192, translate( "advancedButton" ) ),
 
           mBackButton( mainFont, -452.5, -288, translate( "backButton" ) ),
           
@@ -255,46 +255,46 @@ SettingsPage::SettingsPage()
     // addComponent( &mEditAccountButton );
     mEditAccountButton.addActionListener( this );
     
-    mRestartButton.setCursorTip( translate( "restartTip" ));
+    mRestartButton.setCursorTip( translate( "restartTip" ) );
 
-    mGameplayButton.setCursorTip( translate( "gamePlayTip" ));
-    mControlButton.setCursorTip( translate( "controlTip" ));
-    mScreenButton.setCursorTip( translate( "screenTip" ));
-    mSoundButton.setCursorTip( translate( "soundTip" ));
+    mGameplayButton.setCursorTip( translate( "gamePlayTip" ) );
+    mControlButton.setCursorTip( translate( "controlTip" ) );
+    mScreenButton.setCursorTip( translate( "screenTip" ) );
+    mSoundButton.setCursorTip( translate( "soundTip" ) );
 #ifdef USE_DISCORD
-    mDiscordButton.setCursorTip( translate( "discordTip" ));
+    mDiscordButton.setCursorTip( translate( "discordTip" ) );
 #endif // USE_DISCORD
-    mAdvancedButton.setCursorTip( translate( "advancedTip" ));
+    mAdvancedButton.setCursorTip( translate( "advancedTip" ) );
 
-    mBackButton.setCursorTip( translate( "backTip" ));
+    mBackButton.setCursorTip( translate( "backTip" ) );
 
-    mEnableFOVBox.setCursorTip( translate( "enableFOVTip" ));
-    mEnableCenterCameraBox.setCursorTip( translate( "enableCenterCameraTip" ));
-    mEnableNudeBox.setCursorTip( translate( "enableNudeTip" ));
+    mEnableFOVBox.setCursorTip( translate( "enableFOVTip" ) );
+    mEnableCenterCameraBox.setCursorTip( translate( "enableCenterCameraTip" ) );
+    mEnableNudeBox.setCursorTip( translate( "enableNudeTip" ) );
 
-    mUseCustomServerBox.setCursorTip( translate( "useCustomServerTip" ));
-    mCustomServerAddressField.setCursorTip( translate( "customServerAddressTip" ));
-    mCustomServerPortField.setCursorTip( translate( "customServerPortTip" ));
+    mUseCustomServerBox.setCursorTip( translate( "useCustomServerTip" ) );
+    mCustomServerAddressField.setCursorTip( translate( "customServerAddressTip" ) );
+    mCustomServerPortField.setCursorTip( translate( "customServerPortTip" ) );
 
-    mEnableKActionsBox.setCursorTip( translate( "enableKActionsTip" ));
-    mCursorModeSet->setCursorTip( translate( "cursorModeTip" ));
+    mEnableKActionsBox.setCursorTip( translate( "enableKActionsTip" ) );
+    mCursorModeSet->setCursorTip( translate( "cursorModeTip" ) );
 
-    mRedetectButton.setCursorTip( translate( "redetectTip" ));
-    mFullscreenBox.setCursorTip( translate( "fullScreenTip" ));
-    mBorderlessBox.setCursorTip( translate( "borderlessTip" ));
-    mTrippingEffectDisabledBox.setCursorTip( translate( "trippingEffectDisableTip" ));
+    mRedetectButton.setCursorTip( translate( "redetectTip" ) );
+    mFullscreenBox.setCursorTip( translate( "fullScreenTip" ) );
+    mBorderlessBox.setCursorTip( translate( "borderlessTip" ) );
+    mTrippingEffectDisabledBox.setCursorTip( translate( "trippingEffectDisableTip" ) );
 
 #ifdef USE_DISCORD
     // Discord
-    mEnableDiscordRichPresence.setCursorTip( translate( "enableDiscordRichPresenceTip" ));
-    mEnableDiscordRichPresenceStatus.setCursorTip( translate( "enableDiscordRichPresenceStatusTip" ));
-    mEnableDiscordShowAgeInStatus.setCursorTip( translate( "enableDiscordShowAgeInStatusTip" ));
-    mEnableDiscordRichPresenceDetails.setCursorTip( translate( "enableDiscordRichPresenceDetailsTip" ));
-    mDiscordHideFirstNameInDetails.setCursorTip( translate( "discordHideFirstNameInDetailsTip" ));
+    mEnableDiscordRichPresence.setCursorTip( translate( "enableDiscordRichPresenceTip" ) );
+    mEnableDiscordRichPresenceStatus.setCursorTip( translate( "enableDiscordRichPresenceStatusTip" ) );
+    mEnableDiscordShowAgeInStatus.setCursorTip( translate( "enableDiscordShowAgeInStatusTip" ) );
+    mEnableDiscordRichPresenceDetails.setCursorTip( translate( "enableDiscordRichPresenceDetailsTip" ) );
+    mDiscordHideFirstNameInDetails.setCursorTip( translate( "discordHideFirstNameInDetailsTip" ) );
 #endif // USE_DISCORD
 
     mEnableAdvancedShowUseOnObjectHoverKeybind.setCursorTip(
-     translate( "enableAdvancedTip" ));
+     translate( "enableAdvancedTip" ) );
     
     mOldFullscreenSetting = 
         SettingsManager::getIntSetting( "fullscreen", 1 );

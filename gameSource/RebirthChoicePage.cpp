@@ -93,13 +93,13 @@ RebirthChoicePage::RebirthChoicePage()
         }
         
 
-    mQuitButton.setCursorTip( translate( "quitTip" ));
-    mRebornButton.setCursorTip( translate( "qrebornTip" ));
-    mGenesButton.setCursorTip( translate( "genesTip" ));
+    mQuitButton.setCursorTip( translate( "quitTip" ) );
+    mRebornButton.setCursorTip( translate( "qrebornTip" ) );
+    mGenesButton.setCursorTip( translate( "genesTip" ) );
 
-    mTutorialButton.setCursorTip( translate( "tutorialTip_2" ));
-    mSettingsButton.setCursorTip( translate( "settingsTip" ));
-    mMenuButton.setCursorTip( translate( "menuTip" ));
+    mTutorialButton.setCursorTip( translate( "tutorialTip_2" ) );
+    mSettingsButton.setCursorTip( translate( "settingsTip" ) );
+    mMenuButton.setCursorTip( translate( "menuTip" ) );
     
     }
 

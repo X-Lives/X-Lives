@@ -315,17 +315,17 @@ char isNonIntegerScalingAllowed() {
 
 
 const char *getWindowTitle() {
-    return "OneLife";
+    return "X-Lives";
     }
 
 
 const char *getAppName() {
-    return "OneLife";
+    return "X-Lives";
     }
 
 const char *getLinuxAppName() {
     // no dir-name conflict here because we're using all caps for app name
-    return "OneLifeApp";
+    return "XLivesApp";
     }
 
 

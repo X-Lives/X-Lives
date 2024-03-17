@@ -87,8 +87,8 @@ ExistingAccountPage::ExistingAccountPage()
           mNextToGameTabButton( mainFont,  0, 0, translate( "nextToGame" ) ),          
           
           // Left Pane Page 1
-          mFriendsButton( mainFont, 0, 0, translate( "friendYes" )),
-          mSoloButton( mainFont, 0, 0, translate( "soloYes" )),
+          mFriendsButton( mainFont, 0, 0, translate( "friendYes" ) ),
+          mSoloButton( mainFont, 0, 0, translate( "soloYes" ) ),
           mTwinCodeField( mainFont, -360, 16, 10, false, 
                                      translate( "twinCode" ),
                                      NULL,
@@ -97,8 +97,8 @@ ExistingAccountPage::ExistingAccountPage()
           mTwinCodeCopyButton( mainFont, 0, 0, translate( "copy" ) ),
           mTwinCodePasteButton( mainFont, 0, 0, translate( "paste" ) ),
           
-          mSpecificButton( mainFont, 0, 0, translate( "specific" )),
-          mRandomButton( mainFont, 0, 0, translate( "random" )),
+          mSpecificButton( mainFont, 0, 0, translate( "specific" ) ),
+          mRandomButton( mainFont, 0, 0, translate( "random" ) ),
           mSpawnSeed( mainFont, -360, -176, 10, false, 
                                      translate( "spawnCode" ),
                                      NULL,
@@ -128,7 +128,7 @@ ExistingAccountPage::ExistingAccountPage()
           
           // Not in use
           mGenesButton( mainFont, 522, 300, translate( "genesButton" ) ),
-          mClearAccountButton( mainFont, -360, -80, translate( "clearAccount" )), ),
+          mClearAccountButton( mainFont, -360, -80, translate( "clearAccount" ) ),
           mReviewButton( mainFont, -400, -200, translate( "postReviewButton" ) ),
           mAtSignButton( mainFont, 252, 128, "@" ),
           mViewAccountButton( mainFont, 0, 64, translate( "view" ) ),
@@ -388,28 +388,28 @@ ExistingAccountPage::ExistingAccountPage()
     mEmailField.setCursorTip( translate( "emailTip" ) );
     mKeyField.setCursorTip( translate( "keyTip ") );
     
-    mNextToGameTabButton.setCursorTip( translate( "nextToGameTip" ));
+    mNextToGameTabButton.setCursorTip( translate( "nextToGameTip" ) );
     
     mFriendsButton.setCursorTip( translate( "friendsTip" ) );
     mSoloButton.setCursorTip( translate( "friendsTip" ) );
     mTwinCodeField.setCursorTip( translate( "twinTip" ) );
-    mGenerateButton.setCursorTip( translate( "generateTip" ));
-    mPlayerCountRadioButtonSet->setCursorTip( translate( "playerCountRadioTip" ));
+    mGenerateButton.setCursorTip( translate( "generateTip" ) );
+    mPlayerCountRadioButtonSet->setCursorTip( translate( "playerCountRadioTip" ) );
     
-    mSpecificButton.setCursorTip( translate( "specificTip" ));
-    mRandomButton.setCursorTip( translate( "randomTip" ));
-    mSpawnSeed.setCursorTip( translate( "spawnTip" ));
-    mTargetFamily.setCursorTip( translate( "targetFamilyTip" ));
-    mSeedOrFamilyButtonSet->setCursorTip( translate( "seedOrFamilyTip" ));
+    mSpecificButton.setCursorTip( translate( "specificTip" ) );
+    mRandomButton.setCursorTip( translate( "randomTip" ) );
+    mSpawnSeed.setCursorTip( translate( "spawnTip" ) );
+    mTargetFamily.setCursorTip( translate( "targetFamilyTip" ) );
+    mSeedOrFamilyButtonSet->setCursorTip( translate( "seedOrFamilyTip" ) );
     
-    mBackToAccountTabButton.setCursorTip( translate( "backToAccountTip" ));
-    mLoginButton.setCursorTip( translate( "loginTip" ));
+    mBackToAccountTabButton.setCursorTip( translate( "backToAccountTip" ) );
+    mLoginButton.setCursorTip( translate( "loginTip" ) );
     
-    mSettingsButton.setCursorTip( translate( "settingsTip" ));
-    mTutorialButton.setCursorTip( translate( "tutorialTip" ));
+    mSettingsButton.setCursorTip( translate( "settingsTip" ) );
+    mTutorialButton.setCursorTip( translate( "tutorialTip" ) );
     mFamilyTreesButton.setCursorTip( translate( "familyTreesTip" ) );
     mTechTreeButton.setCursorTip( translate( "techTreeTip" ) );
-    mCancelButton.setCursorTip( translate( "cancelTip" ));
+    mCancelButton.setCursorTip( translate( "cancelTip" ) );
     
     mGenesButton.setCursorTip( translate( "genesTip" ) );
     mClearAccountButton.setCursorTip( translate( "clearAccountTip" ) );
@@ -589,14 +589,14 @@ void ExistingAccountPage::updateLeftPane() {
     if( !tutorialDone ) {
         leftPanePage = 0;
         
-        mTutorialButton.setLabelText( translate( "play" ));
-        mTutorialButton.setCursorTip( translate( "startTheGame" ));
+        mTutorialButton.setLabelText( translate( "play" ) );
+        mTutorialButton.setCursorTip( translate( "startTheGame" ) );
         mTutorialButton.setSize( 360, 60 );
         mTutorialButton.setPosition( mEmailField.getRightEdgeX() - ( mNextToGameTabButton.getWidth()/2 ), -272 );
         }
     else {
         mTutorialButton.setLabelText( translate( "tutorial" ) );
-        mTutorialButton.setCursorTip( translate( "tutorialTip" ));
+        mTutorialButton.setCursorTip( translate( "tutorialTip" ) );
         mTutorialButton.setSize( 175, 60 );
         // setPosition in this case is done elsewhere with the right pane buttons
         }
